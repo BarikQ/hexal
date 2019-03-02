@@ -462,6 +462,28 @@ a {
   grid-template: 1fr / 120px 1fr 120px;
 }
 
+.get_in::before{
+  position: relative;
+  content: "";
+  width: 960px;
+  height: 1px;
+  background: #2b2b2b;
+  display: block;
+  top: -47px;
+  left: 33px
+}
+
+.copyright::before{
+  position: relative;
+  content: "";
+  width: 960px;
+  height: 1px;
+  background: #2b2b2b;
+  display: block;
+  top: -12px;
+  margin: 0 auto;
+}
+
 .get_in_head{
   grid-column: 2;
 }
