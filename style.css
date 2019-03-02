@@ -129,7 +129,8 @@ ul {
 }
 
 div.hexagon {
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  -moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   Height: 206px;
   Width: 180px;
 }
@@ -561,6 +562,12 @@ textarea{
   padding-top: 1px;
 }
 
+#send_btn:hover{
+  cursor: pointer;
+  background-color: #454545;
+  color: #2eb398;
+}
+
 #message{
   height: 139px;
   font-family: lato-regular;
@@ -579,52 +586,67 @@ textarea{
 .contacts ul{
   display: list-item;
   margin-left: 4px;
-  margin-top: 0;
+  margin-top: -1px;
+}
+
+.contacts li img{
+  transition: all 0.3s ease;
+}
+
+.contacts li p{
+  transition: all 0.3s ease;
+}
+
+.contacts li img:hover{
+  transform: scale(1.2);
 }
 
 .li_2{
-  margin: 6px 0 0 -2px;
+  margin: 3px 0 0 -2px;
 }
 
 .li_3{
-  margin: 5px 0 0 -3px;
+  margin: 2px 0 0 -3px;
 }
 
-
-.li_1::after{
-  content: "Elm St. 14/05 Lost City";
+.contacts li p{
+  display: inline;
   color: #bebebe;
+}
+
+.li_1 p{
   position: relative;
   bottom: 2px;
   font-size: 1.2em;
   font-weight: 100;
-  left: 15px;
+  left: 12px;
   letter-spacing: -0.1px;
   word-spacing: 0.7px;
 }
 
-
-.li_2::after{
-  content: "+ 3528 331 86 35";
-  color: #bebebe;
+.li_2 p{
   position: relative;
   bottom: 2px;
   font-size: 1.2em;
   font-weight: 100;
-  left: 13px;
+  left: 10px;
+  word-spacing: -1px;
+  letter-spacing: 0.2px;
 }
 
-
-.li_3::after{
-  content: "info@hexalcorp.com";
-  color: #bebebe;
+.li_3 p{
   position: relative;
   font-size: 1.2em;
   font-weight: 100;
-  left: 12px;
+  left: 9px;
   letter-spacing: 0.1px;
 }
 
+.contacts ul li p:hover{
+  cursor: pointer;
+  font-size: 1.3em;
+  color: white;
+}
 
 .copyright{
   color: #3b3b3b;
@@ -646,9 +668,74 @@ textarea{
   letter-spacing: -0.3px;
 }
 
+.popup{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .8);
+  text-align: center;
+  z-index: 400;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
 
+.popup:target{
+  opacity: 1;
+  visibility: visible;
+}
 
+.popup_content{
+  width: 80%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  background-color: #454545;
+  color: #bebebe;
+  max-width: 1020px;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .8);
+  font-size: 2.3rem;
+  grid-template: 1fr / 4fr 4fr 1fr;
+  display: grid;
+  padding: 15px;
+}
 
+.popup_close{
+  justify-self: right;
+  color: #bebebe;
+  transition: all .3s;
+  position: relative;
+  top: -15px;
+  left: 2px;
+  height: 20px;
+  width: 20px;
+}
+
+.popup_close:hover{
+  color: white;
+  cursor: pointer;
+  font-size: 3rem;
+  left: -5px;
+}
+
+.popup_contacts{
+  display: grid;
+}
+
+.popup_contacts p{
+  transition: all 0.2s ease;
+}
+
+.popup_contacts p:hover{
+  font-size: 1.1em;
+  color: white;
+  cursor: pointer;
+}
 
 
 
