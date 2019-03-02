@@ -2,19 +2,20 @@
 <html>
 
 <head>
-    <title></title>
+    <title>Hexal</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <body>
     <header class="header">
         <nav class="navbar">
             <ul class="nav_list">
-                <li class="left_item first_item"><a href="#">PORTFOLIO</a></li>
-                <li class="left_item"><a href="#">ABOUT</a></li>
+                <li class="left_item first_item"><a href="#portfolio">PORTFOLIO</a></li>
+                <li class="left_item"><a href="#about">ABOUT</a></li>
                 <li class="navbar_logo"><a class="navbar_hexagon"><img src="assets/Logo.png"></a></li>
                 <li class="right_item third_item"><a href="#">BLOG</a></li>
-                <li class="right_item"><a href="#">GET IN TOUCH</a></li>
+                <li class="right_item"><a href="#get_in">GET IN TOUCH</a></li>
             </ul>
         </nav>
     </header>
@@ -22,6 +23,7 @@
     <main class="main">
 
         <div class="slider_block">
+            <a id="portfolio"></a>
             <div class="main_stripes_top"></div>
 
             <div class="all">
@@ -88,6 +90,7 @@
         </div>
 
         <div class="about_block">
+            <a id="about"></a>
             <div class="about_content">
                 <div class="hexagon guy_photo"></div>
                 <div class="about_info">
@@ -117,6 +120,61 @@
         </div>
 
     </main>
+
+    <footer class="footer">
+        <a id="get_in"></a>
+        <div class="get_in">
+
+            <div class="get_in_head">
+                <h2>Get In Touch</h2>
+                <h3>In order to get in touch use the contact form below:</h3>
+            </div>    
+
+            <div class="fields">
+                
+                <div class="field_name">
+                    <input type="text" name="name" id="name" class="field" placeholder="Name (Required)">
+                </div>
+
+                <div class="field_email">
+                    <input type="text" name="email" id="email" class="field" placeholder="Email (Required)">
+                </div>
+
+                <div class="field_subj">
+                    <input type="text" name="subj" id="subj" class="field" placeholder="Subject">
+                </div>
+
+                <p>
+                    <strong>Quisque Hendrerit:</strong> purus dapibus, ornare nibh vitae,
+                    viverra nibh. Fusce vitae aliquam tellus. Proin sit
+                    amet volutpat libero. Nulla sed nunc et tortor luctus
+                    faucibus morbi vitae. 
+                </p>
+
+                <div class="field_message">
+                    <textarea type="text" name="message" id="message" class="field" placeholder="Write your message here..."></textarea>
+                </div>
+
+                <div class="contacts">
+                    <ul>
+                        <li class="li_1"><a href=""><img src="assets/location.png"></a></li>
+                        <li class="li_2"><a href=""><img src="assets/phone.png"></a></li>
+                        <li class="li_3"><a href=""><img src="assets/mail.png"></a></li>
+                    </ul>
+                </div>
+
+                <div class="send_btn">
+                    <input type="submit" id="send_btn" value="SEND">
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="copyright_text">
+                <p>© Copyright 2013 by PSDchat</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

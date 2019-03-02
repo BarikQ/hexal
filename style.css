@@ -430,6 +430,222 @@ a {
   border: 1px solid black;
 }
 
+.footer{
+  background-color: #323232;
+  padding-top: 60px;
+}
+
+.get_in h2{
+  color: #e0e0e0;
+  font-weight: inherit;
+  font-size: 1.8em;
+  word-spacing: 3px;
+  margin-left: 3px;
+  letter-spacing: 0.34px;
+}
+
+.get_in h3{
+  color: #bebebe;
+  font-weight: 100;
+  font-size: 1.1em;
+  margin-top: -1px;
+  word-spacing: 2.15px;
+  margin-left: 3px;
+  letter-spacing: 0.2px;
+}
+
+.get_in{
+  display: grid;
+  max-width: 1024px;
+  margin: 0 auto;
+  grid-template: 1fr / 120px 1fr 120px;
+}
+
+.get_in_head{
+  grid-column: 2;
+}
+
+.fields{
+  grid-column: 2;
+  padding-top: 20px;
+  padding-left: 2px;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 38px) 1fr;
+  grid-gap: 16px 18px;
+}
+
+#field{
+  height: 38px;
+  width: 580px;
+}
+
+textarea{
+  resize: none;
+  outline: none;
+  overflow: auto;
+}
+
+.field{
+  height: 38px;
+  width: 566px;
+  outline: none;
+  background-color: #454545;
+  color: #bebebe;
+  padding-left: 14px;
+  font-weight: 100;
+  font-size: 0.7em;
+  word-spacing: -1.8px;
+}
+
+::-webkit-input-placeholder {color: #bebebe;}
+::-moz-placeholder          {color: #bebebe;}
+:-moz-placeholder           {color: #bebebe;}
+:-ms-input-placeholder      {color: #bebebe;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+input{
+  border: none;
+}
+
+textarea{
+  border: none;
+}
+
+.fields p{
+  color: #bebebe;
+  font-weight: 100;
+  font-size: 0.7em;
+  margin-left: 3px;
+  margin-top: -4px;
+  letter-spacing: 0.5px;
+  word-spacing: 5px;
+  line-height: 18px;
+}
+
+.fields p strong{
+  color: #e0e0e0;
+}
+
+.field_email{
+  grid-row: 2;
+}
+
+.field_subj{
+  grid-row: 3;
+}
+
+.field_message{
+  grid-row: 4/5;
+}
+
+.send_btn{
+  grid-row: 5;
+  justify-self: flex-end;
+  margin-top: -3px;
+}
+
+#send_btn{
+  height: 37px;
+  width: 90px;
+  background-color: #2eb398;
+  color: #d7fcf5;
+  font-weight: 100;
+  font-size: 0.7em;
+  padding-top: 1px;
+}
+
+#message{
+  height: 139px;
+  font-family: lato-regular;
+  padding-top: 11px;
+  font-weight: 100;
+  font-size: 0.77em;
+  word-spacing: 0.3px;
+  letter-spacing: -0.5px;
+}
+
+.contacts{
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.contacts ul{
+  display: list-item;
+  margin-left: 4px;
+  margin-top: 0;
+}
+
+.li_2{
+  margin: 6px 0 0 -2px;
+}
+
+.li_3{
+  margin: 5px 0 0 -3px;
+}
+
+
+.li_1::after{
+  content: "Elm St. 14/05 Lost City";
+  color: #bebebe;
+  position: relative;
+  bottom: 2px;
+  font-size: 1.2em;
+  font-weight: 100;
+  left: 15px;
+  letter-spacing: -0.1px;
+  word-spacing: 0.7px;
+}
+
+
+.li_2::after{
+  content: "+ 3528 331 86 35";
+  color: #bebebe;
+  position: relative;
+  bottom: 2px;
+  font-size: 1.2em;
+  font-weight: 100;
+  left: 13px;
+}
+
+
+.li_3::after{
+  content: "info@hexalcorp.com";
+  color: #bebebe;
+  position: relative;
+  font-size: 1.2em;
+  font-weight: 100;
+  left: 12px;
+  letter-spacing: 0.1px;
+}
+
+
+.copyright{
+  color: #3b3b3b;
+  height: 43px;
+  background-color: #222222;
+  margin-top: 65px;
+}
+
+.copyright_text{
+  max-width: 1020px;
+  margin: 0 auto;
+  padding-top: 13px;
+}
+
+.copyright_text p{
+  margin-left: 40px;
+  font-size: 0.73em;
+  word-spacing: 2px;
+  letter-spacing: -0.3px;
+}
+
 
 
 
