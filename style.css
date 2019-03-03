@@ -749,11 +749,12 @@ textarea{
   display: grid;
 }
 
-.popup_contacts p{
+.popup_contacts a{
+  color: #bebebe;
   transition: all 0.2s ease;
 }
 
-.popup_contacts p:hover{
+.popup_contacts a:hover{
   font-size: 1.1em;
   color: white;
   cursor: pointer;
