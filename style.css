@@ -42,7 +42,7 @@ h1 {
   overflow: hidden;
   visibility: hidden;
   background-color: #323232;
-  margin-top: -54px;
+  margin-top: -55px;
   transition: all 0.2s linear;
 }
 
@@ -51,7 +51,7 @@ h1 {
   position: absolute;
   width: 200%;
   height: 200%;
-  top: -51%;
+  top: -50%;
   left: -51%;
   z-index: -1;
   background: url(assets/logo.png) center no-repeat;
