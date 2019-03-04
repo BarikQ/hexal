@@ -139,7 +139,7 @@ ul {
   padding-bottom: 11.5px;
 }
 
-.slider_content {
+.slider_hexagons {
   display: grid;
   justify-content: center;
   margin-left: 0.5px;
@@ -159,7 +159,7 @@ ul {
   -moz-transform: rotate(120deg);
   overflow: hidden;
   visibility: hidden;
-  transition: all 0.2s linear;
+  filter: grayscale(0.25);
 }
 
 .hex-layer-1{
@@ -176,9 +176,7 @@ ul {
   -webkit-transform: rotate(-60deg);
   -moz-transform: rotate(-60deg);
   overflow: hidden;
-  visibility: visible;
-  
-  filter: grayscale(0.25);
+  visibility: visible; 
 }
 
 .row_1 .hexagon:nth-child(1) .hex-layer-2{
@@ -259,10 +257,15 @@ ul {
   background-position-y: -7px;
 }
 
-div.hexagon:hover {
+.hexagon:hover {
   cursor: pointer;
   filter: grayscale(0);
-  transition: all 0.2s linear;
+  height: 105%;
+  width: 105%;
+  position: relative;
+  top: -5px;
+  left: -5px;
+  z-index: 10;
 }
 
 .row_1 {
@@ -324,7 +327,7 @@ div.hexagon:hover {
   float: left;
 }
 
-#slides .image {
+#slides .slider_content {
   width: 500%;
   line-height: 0;
 }
@@ -351,27 +354,27 @@ a {
   display: none;
 }
 
-#switch1:checked ~ #slides .image {
+#switch1:checked ~ #slides .slider_content {
   margin-left: 0;
 }
 
-#switch2:checked ~ #slides .image {
+#switch2:checked ~ #slides .slider_content {
   margin-left: -100%;
 }
 
-#switch3:checked ~ #slides .image {
+#switch3:checked ~ #slides .slider_content {
   margin-left: -200%;
 }
 
-#switch4:checked ~ #slides .image {
+#switch4:checked ~ #slides .slider_content {
   margin-left: -300%;
 }
 
-#switch5:checked ~ #slides .image {
+#switch5:checked ~ #slides .slider_content {
   margin-left: -400%;
 }
 
-#switch6:checked ~ #slides .image {
+#switch6:checked ~ #slides .slider_content {
   margin-left: -500%;
 }
 
@@ -406,7 +409,7 @@ a {
   background: #8b8784;
 }
 
-#slides .image {
+#slides .slider_content {
   transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 
@@ -474,6 +477,12 @@ a {
   background-position-x: -120px;
   background-position-y: -1px;
   filter: grayscale(0.18);
+}
+
+.guy_photo .hex-layer-2{
+  background-image: url(assets/guy_photo.png);
+  background-position-x: 49%;
+  background-position-y: 80%;
 }
 
 .about_info h3 {
@@ -777,7 +786,7 @@ textarea {
   bottom: 2px;
   font-size: 1.2em;
   font-weight: 100;
-  left: 12px;
+  left: 10px;
   letter-spacing: -0.1px;
   word-spacing: 0.7px;
 }
@@ -787,7 +796,7 @@ textarea {
   bottom: 2px;
   font-size: 1.2em;
   font-weight: 100;
-  left: 10px;
+  left: 8px;
   word-spacing: -1px;
   letter-spacing: 0.2px;
 }
@@ -796,7 +805,7 @@ textarea {
   position: relative;
   font-size: 1.2em;
   font-weight: 100;
-  left: 9px;
+  left: 7px;
   letter-spacing: 0.1px;
 }
 
