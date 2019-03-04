@@ -42,6 +42,19 @@ h1 {
   transition: all 0.2s linear;
 }
 
+.navbar_hexagon .hex-layer-2::before{
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -48%;
+  left: -43%;
+  z-index: -1;
+  background: url(assets/logo.png) center no-repeat;
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+}
+
 .navbar_hexagon:hover {
   cursor: pointer;
 }
@@ -132,26 +145,124 @@ ul {
   margin-left: 0.5px;
 }
 
-div.hexagon {
+/* div.hexagon {
   -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   -moz-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   height: 206px;
   width: 180px;
+} */
+
+.hexagon{
+  height: 206px;
+  width: 180px;
+  -webkit-transform: rotate(120deg);
+  -moz-transform: rotate(120deg);
+  overflow: hidden;
+  visibility: hidden;
+  transition: all 0.2s linear;
+}
+
+.hex-layer-1{
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  overflow: hidden;
+}
+
+.hex-layer-2{
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotate(-60deg);
+  -moz-transform: rotate(-60deg);
+  overflow: hidden;
+  visibility: visible;
+  
+  filter: grayscale(0.25);
+}
+
+.row_1 .hexagon:nth-child(1) .hex-layer-2{
+  background-image: url(assets/1.png);
+  background-position-x: -23px;
+  background-position-y: -12px;
+}
+
+.row_1 .hexagon:nth-child(2) .hex-layer-2{
+  background-image: url(assets/2.png);
+  background-position-x: -20px;
+  background-position-y: -9px;
+}
+
+.row_1 .hexagon:nth-child(3) .hex-layer-2{
+  background-image: url(assets/3.png);
+  background-position-x: -20px;
+  background-position-y: -7px;
+}
+
+.row_1 .hexagon:nth-child(4) .hex-layer-2{
+  background-image: url(assets/4.png);
+  background-position-x: -20px;
+  background-position-y: -18px;
+}
+
+.row_2 .hexagon:nth-child(1) .hex-layer-2{
+  background-image: url(assets/5.png);
+  background-position-x: -20px;
+  background-position-y: -12px;
+}
+
+.row_2 .hexagon:nth-child(2) .hex-layer-2{
+  background-image: url(assets/6.png);
+  background-position-x: -21px;
+  background-position-y: -14px;
+}
+
+.row_2 .hexagon:nth-child(3) .hex-layer-2{
+  background-image: url(assets/7.png);
+  background-position-x: -20px;
+  background-position-y: -8px;
+}
+
+.row_2 .hexagon:nth-child(4) .hex-layer-2{
+  background-image: url(assets/8.png);
+  background-position-x: -20px;
+  background-position-y: -9px;
+}
+
+.row_2 .hexagon:nth-child(5) .hex-layer-2{
+  background-image: url(assets/9.png);
+  background-position-x: -22px;
+  background-position-y: -12px;
+}
+
+.row_3 .hexagon:nth-child(1) .hex-layer-2{
+  background-image: url(assets/10.png);
+  background-position-x: -20px;
+  background-position-y: -7px;
+}
+
+.row_3 .hexagon:nth-child(2) .hex-layer-2{
+  background-image: url(assets/11.png);
+  background-position-x: -20px;
+  background-position-y: -7px;
+}
+
+.row_3 .hexagon:nth-child(3) .hex-layer-2{
+  background-image: url(assets/12.png);
+  background-position-x: -19px;
+  background-position-y: -6px;
+}
+
+.row_3 .hexagon:nth-child(4) .hex-layer-2{
+  background-image: url(assets/13.png);
+  background-position-x: -10px;
+  background-position-y: -7px;
 }
 
 div.hexagon:hover {
   cursor: pointer;
-}
-
-.slider_content .hexagon img {
-  margin: -12px 0 0 -23px;
-  filter: grayscale(0.25);
-  transition: all 0.2s linear;
-}
-
-.slider_content .hexagon img:hover {
   filter: grayscale(0);
-  transform: scale(1.05);
+  transition: all 0.2s linear;
 }
 
 .row_1 {
@@ -785,7 +896,7 @@ textarea {
   cursor: pointer;
 }
 
-.hexagon {
+/* .hexagon {
   overflow: hidden;
   visibility: hidden;
   -webkit-transform: rotate(120deg);
@@ -829,4 +940,4 @@ textarea {
   width: 200px;
   height: 400px;
   margin: -80px 0 0 20px;
-}
+} */
