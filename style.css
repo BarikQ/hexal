@@ -42,7 +42,7 @@ a {
   transition: all 0.2s linear;
 }
 
-.navbar-hexagon .hex-layer-2::before{
+.navbar-hexagon .hex-layer-2::before {
   content: "";
   position: absolute;
   width: 200%;
@@ -142,7 +142,7 @@ ul {
   width: 180px;
 } */
 
-.hexagon{
+.hexagon {
   height: 206px;
   width: 180px;
   transform: rotate(120deg);
@@ -154,7 +154,7 @@ ul {
   transition: all 0.2s ease;
 }
 
-.hex-layer-1{
+.hex-layer-1 {
   height: 100%;
   width: 100%;
   transform: rotate(-60deg);
@@ -164,7 +164,7 @@ ul {
   background-color: #323232;
 }
 
-.hex-layer-2{
+.hex-layer-2 {
   background-color: #323232;
   height: 100%;
   width: 100%;
@@ -172,82 +172,82 @@ ul {
   -webkit-transform: rotate(-60deg);
   -moz-transform: rotate(-60deg);
   overflow: hidden;
-  visibility: visible; 
+  visibility: visible;
 }
 
-.row-1 .hexagon:nth-child(1) .hex-layer-2{
+.row-1 .hexagon:nth-child(1) .hex-layer-2 {
   background-image: url(assets/1.png);
   background-position-x: -23px;
   background-position-y: -12px;
 }
 
-.row-1 .hexagon:nth-child(2) .hex-layer-2{
+.row-1 .hexagon:nth-child(2) .hex-layer-2 {
   background-image: url(assets/2.png);
   background-position-x: -20px;
   background-position-y: -9px;
 }
 
-.row-1 .hexagon:nth-child(3) .hex-layer-2{
+.row-1 .hexagon:nth-child(3) .hex-layer-2 {
   background-image: url(assets/3.png);
   background-position-x: -20px;
   background-position-y: -7px;
 }
 
-.row-1 .hexagon:nth-child(4) .hex-layer-2{
+.row-1 .hexagon:nth-child(4) .hex-layer-2 {
   background-image: url(assets/4.png);
   background-position-x: -20px;
   background-position-y: -18px;
 }
 
-.row-2 .hexagon:nth-child(1) .hex-layer-2{
+.row-2 .hexagon:nth-child(1) .hex-layer-2 {
   background-image: url(assets/5.png);
   background-position-x: -20px;
   background-position-y: -12px;
 }
 
-.row-2 .hexagon:nth-child(2) .hex-layer-2{
+.row-2 .hexagon:nth-child(2) .hex-layer-2 {
   background-image: url(assets/6.png);
   background-position-x: -21px;
   background-position-y: -14px;
 }
 
-.row-2 .hexagon:nth-child(3) .hex-layer-2{
+.row-2 .hexagon:nth-child(3) .hex-layer-2 {
   background-image: url(assets/7.png);
   background-position-x: -20px;
   background-position-y: -8px;
 }
 
-.row-2 .hexagon:nth-child(4) .hex-layer-2{
+.row-2 .hexagon:nth-child(4) .hex-layer-2 {
   background-image: url(assets/8.png);
   background-position-x: -20px;
   background-position-y: -9px;
 }
 
-.row-2 .hexagon:nth-child(5) .hex-layer-2{
+.row-2 .hexagon:nth-child(5) .hex-layer-2 {
   background-image: url(assets/9.png);
   background-position-x: -22px;
   background-position-y: -12px;
 }
 
-.row-3 .hexagon:nth-child(1) .hex-layer-2{
+.row-3 .hexagon:nth-child(1) .hex-layer-2 {
   background-image: url(assets/10.png);
   background-position-x: -20px;
   background-position-y: -7px;
 }
 
-.row-3 .hexagon:nth-child(2) .hex-layer-2{
+.row-3 .hexagon:nth-child(2) .hex-layer-2 {
   background-image: url(assets/11.png);
   background-position-x: -20px;
   background-position-y: -7px;
 }
 
-.row-3 .hexagon:nth-child(3) .hex-layer-2{
+.row-3 .hexagon:nth-child(3) .hex-layer-2 {
   background-image: url(assets/12.png);
   background-position-x: -19px;
   background-position-y: -6px;
 }
 
-.row-3 .hexagon:nth-child(4) .hex-layer-2{
+.row-3 .hexagon:nth-child(4) .hex-layer-2 {
   background-image: url(assets/13.png);
   background-position-x: -10px;
   background-position-y: -7px;
@@ -331,7 +331,7 @@ ul {
   overflow: hidden;
 }
 
-#desktop:checked ~ #slider {
+#desktop:checked~#slider {
   max-width: 1020px;
 }
 
@@ -348,27 +348,27 @@ a {
   display: none;
 }
 
-#switch1:checked ~ #slides .slider-content {
+#switch1:checked~#slides .slider-content {
   margin-left: 0;
 }
 
-#switch2:checked ~ #slides .slider-content {
+#switch2:checked~#slides .slider-content {
   margin-left: -100%;
 }
 
-#switch3:checked ~ #slides .slider-content {
+#switch3:checked~#slides .slider-content {
   margin-left: -200%;
 }
 
-#switch4:checked ~ #slides .slider-content {
+#switch4:checked~#slides .slider-content {
   margin-left: -300%;
 }
 
-#switch5:checked ~ #slides .slider-content {
+#switch5:checked~#slides .slider-content {
   margin-left: -400%;
 }
 
-#switch6:checked ~ #slides .slider-content {
+#switch6:checked~#slides .slider-content {
   margin-left: -500%;
 }
 
@@ -394,12 +394,12 @@ a {
   background: #8b8784;
 }
 
-#switch1:checked ~ #active label:nth-child(1),
-#switch2:checked ~ #active label:nth-child(2),
-#switch3:checked ~ #active label:nth-child(3),
-#switch4:checked ~ #active label:nth-child(4),
-#switch5:checked ~ #active label:nth-child(5),
-#switch6:checked ~ #active label:nth-child(6) {
+#switch1:checked~#active label:nth-child(1),
+#switch2:checked~#active label:nth-child(2),
+#switch3:checked~#active label:nth-child(3),
+#switch4:checked~#active label:nth-child(4),
+#switch5:checked~#active label:nth-child(5),
+#switch6:checked~#active label:nth-child(6) {
   background: #8b8784;
 }
 
@@ -470,13 +470,13 @@ a {
   filter: grayscale(0.18);
 }
 
-.guy-photo .hex-layer-2{
+.guy-photo .hex-layer-2 {
   background-image: url(assets/guy_photo.png);
   background-position-x: 49%;
   background-position-y: 80%;
 }
 
-.about-content .hexagon:hover{
+.about-content .hexagon:hover {
   cursor: pointer;
   transition: all 0.2s ease;
   transform: rotate(120deg) scale(1.1);
@@ -583,13 +583,13 @@ a {
 
 .get-in-block::before {
   position: relative;
-    content: "";
-    width: 960px;
-    height: 1px;
-    background: #2b2b2b;
-    display: block;
-    top: -47px;
-    margin: 0 auto;
+  content: "";
+  width: 960px;
+  height: 1px;
+  background: #2b2b2b;
+  display: block;
+  top: -47px;
+  margin: 0 auto;
 }
 
 .copyright::before {
@@ -603,7 +603,7 @@ a {
   margin: 0 auto;
 }
 
-form{
+form {
   display: grid;
   grid-template-columns: 584px 1fr;
   grid-gap: 20px;
@@ -627,7 +627,7 @@ textarea {
   overflow: auto;
 }
 
-button{
+button {
   background-color: #323232;
   border: none;
   position: relative;
@@ -647,13 +647,13 @@ button{
   word-spacing: -1.8px;
 }
 
-fieldset{
+fieldset {
   border: none;
 }
 
 fieldset :nth-child(2),
 fieldset :nth-child(3),
-fieldset :nth-child(4){
+fieldset :nth-child(4) {
   margin-top: 16px;
 }
 
@@ -697,7 +697,7 @@ textarea {
   border: none;
 }
 
-.fields-info{
+.fields-info {
   padding-top: 16px;
 }
 
@@ -711,7 +711,7 @@ textarea {
   text-align: justify;
 }
 
-.fields-info p strong{
+.fields-info p strong {
   word-spacing: 6px;
   letter-spacing: 0.4px;
 }
@@ -909,8 +909,8 @@ textarea {
   cursor: pointer;
 }
 
-@media(max-width: 1000px){
-  .fields p{
+@media(max-width: 1000px) {
+  .fields p {
     line-height: 150%;
   }
 }
