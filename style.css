@@ -576,6 +576,11 @@ a {
   letter-spacing: 0.4px;
 }
 
+.get-in-block{
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
 .get-in {
   max-width: 787px;
   margin: 0 auto;
